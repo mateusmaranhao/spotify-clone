@@ -20,8 +20,12 @@
         <a href="index.html">
           <img src="./img/spotify-logo.svg" alt="Logo do Spotify">
         </a>
-        <nav class="menu-links">
-          <ul>
+        <nav id="nav" class="menu-links">
+          <button aria-label="Abrir Menun" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+
+          <ul id="menu" role="menu">
             <li>
               <a href="#">
                 Premium
@@ -37,11 +41,6 @@
                 Baixar
               </a>
             </li>
-
-            <li>
-              |
-            </li>
-
             <li>
               <a href="#">
                 Inscrever-se
@@ -61,15 +60,12 @@
   <main>
     <div class="container">
       <section class="hero">
-
-
         <h1>Escutar muda tudo</h1>
         <p>
           Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.
         </p>
 
         <a href="#" class="btn">Baixe o spotify free</a>
-
       </section>
     </div>
   </main>
@@ -173,9 +169,10 @@
           </li>
         </ul>
       </div>
-
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
